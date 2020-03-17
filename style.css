@@ -7,3 +7,12 @@
   --primary-color: #30336b;
   --secondary-color: #be2edd;
 }
+/* Reset and body styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
