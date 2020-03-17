@@ -8,3 +8,9 @@ const model = document.getElementById("modal");
 toggle.addEventListener("click", () =>
   document.body.classList.toggle("show-nav")
 );
+
+// Show Modal
+open.addEventListener("click", () => modal.classList.add("show-modal"));
+
+// Remove Modal
+close.addEventListener("click", () => modal.classList.remove("show-modal"));

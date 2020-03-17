@@ -135,6 +135,10 @@ header p {
   bottom: 0;
 }
 
+.modal-container.show-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   border-radius: 5px;
@@ -146,6 +150,19 @@ header p {
   transform: translate(-50%, -50%);
   max-width: 100%;
   width: 400px;
+
+  animation-name: modalOpen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    oapcity: 1;
+  }
 }
 
 .modal-header {
