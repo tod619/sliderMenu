@@ -14,3 +14,8 @@ open.addEventListener("click", () => modal.classList.add("show-modal"));
 
 // Remove Modal
 close.addEventListener("click", () => modal.classList.remove("show-modal"));
+
+// Hide Modal on Outside Click
+window.addEventListener("click", e =>
+  e.target == modal ? modal.classList.remove("show-modal") : false
+);
